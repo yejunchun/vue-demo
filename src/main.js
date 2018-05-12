@@ -4,11 +4,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App'
 import router from './app/router'
-import Cube from 'cube-ui'
+import utils from './utils/router'
 
-Vue.use(Cube)
 Vue.use(VueRouter)
 Vue.config.productionTip = false
+
+console.log(utils.group)
 
 /* eslint-disable no-new */
 new Vue({
